@@ -1,0 +1,10 @@
+// Initialize WebGL Context
+const gl = canvas.getContext('webgl');
+// Load shaders and textures for GPU acceleration
+
+// Example: Apply Filter via WebGL
+function applyWebGLFilter(filterType) {
+  const shader = shaders[filterType];
+  gl.useProgram(shader.program);
+  // Render to texture
+}
