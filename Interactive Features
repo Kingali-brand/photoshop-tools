@@ -1,0 +1,24 @@
+// Theme Toggle
+const themeToggle = document.getElementById('themeToggle');
+themeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('light-theme');
+});
+
+// Draggable Layers
+import Sortable from 'sortablejs';
+new Sortable(document.querySelector('.layers-panel'), {
+  animation: 150,
+  ghostClass: 'dragging-ghost'
+});
+
+// Real-Time Brush Preview
+const canvas = document.getElementById('mainCanvas');
+canvas.addEventListener('mousemove', (e) => {
+  if (currentTool === 'brush') {
+    drawBrushPreview(e.offsetX, e.offsetY);
+  }
+});
+
+function drawBrushPreview(x, y) {
+  // Use WebGL/Canvas for performance
+}
