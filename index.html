@@ -1,0 +1,31 @@
+<!-- Dark/Light Theme Toggle -->
+<div class="theme-switcher">
+  <button id="themeToggle">🌓</button>
+</div>
+
+<!-- Main Workspace -->
+<div class="workspace">
+  <!-- Left Toolbar -->
+  <div class="toolbar glass-panel">
+    <div class="tool" data-tool="brush">
+      <svg><!-- Custom SVG Icon --></svg>
+    </div>
+    <!-- More tools -->
+  </div>
+
+  <!-- Canvas Area -->
+  <div class="canvas-container">
+    <canvas id="mainCanvas"></canvas>
+    <div class="loading-overlay skeleton"></div>
+  </div>
+
+  <!-- Right Panels -->
+  <div class="right-panel">
+    <div class="layers-panel glass-panel">
+      <div class="layer" draggable="true">Layer 1</div>
+    </div>
+    <div class="properties-panel">
+      <input type="range" class="slider" id="opacitySlider">
+    </div>
+  </div>
+</div>
